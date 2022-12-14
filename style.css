@@ -1,12 +1,113 @@
 * {
   box-sizing: border-box;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
+  line-height: 150%;
 }
 
 html,
 body {
   margin: 0;
   padding: 0;
+  height: 100%;
+  background: var(--color-white);
+  color: var(--color-black-100);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-/* Add styles here! */
+:root {
+  /* Spacing */
+  --space-1: 8px;
+  --space-2: 16px;
+  --space-3: 24px;
+  --space-4: 32px;
+  --space-5: 48px;
+  --space-6: 64px;
+  --space-7: 96px;
+  --space-8: 128px;
+
+  /* Font sizes */
+  --font-size-1: 1rem;
+  --font-size-2: 1.25rem;
+  --font-size-3: 1.5rem;
+  --font-size-4: 2rem;
+
+  /* Color palette */
+  --color-primary-30: hsl(160deg, 100%, 30%); /* green */
+  --color-secondary-50: hsl(45deg, 100%, 50%); /* gold (lighter) */
+  --color-secondary-40: hsl(45deg, 100%, 40%); /* gold (darker) */
+  --color-black-100: hsl(0deg, 0%, 0%); /* gray (black) */
+  --color-black-10: hsl(0deg, 0%, 10%); /* gray (very dark) */
+  --color-black-30: hsl(0deg, 0%, 30%); /* gray (dark) */
+  --color-black-40: hsl(0deg, 0%, 40%); /* gray (medium) */
+  --color-black-60: hsl(0deg, 0%, 60%); /* gray (light) */
+  --color-white: hsl(0deg, 0%, 100%); /* gray (white) */
+}
+
+header {
+  margin: var(--space-7) 0 var(--space-6);
+}
+
+main {
+  background: var(--color-black-40);
+  border-top: solid 8px var(--color-black-60);
+  padding-top: var(--space-6);
+  padding-bottom: 58px;
+}
+
+em {
+  font-style: normal;
+}
+
+strong {
+  color: var(--color-primary-30);
+}
+
+p {
+  font-weight: 400;
+  font-size: var(--font-size-2);
+  letter-spacing: -0.005em;
+  margin: 0;
+}
+
+p + p {
+  margin-top: var(--space-2);
+}
+h1.title {
+  font-weight: 800;
+  font-size: var(--font-size-4);
+  color: var(--color-black-100);
+  line-height: 120%;
+  margin-bottom: var(--space-5);
+}
+
+.intro-chunk {
+  padding: 0 var(--space-3);
+  max-width: 460px;
+}
+
+.max-width-wrapper {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h2.indented-heading {
+  font-size: var(--font-size-3);
+  background: var(--color-secondary-50);
+  border-bottom: solid 8px var(--color-secondary-40);
+  padding: var(--space-2) var(--space-4);
+  line-height: 120%;
+  margin: calc(-1 * var(--space-2)) 0 var(--space-2) calc(-1 * var(--space-4));
+  width: fit-content;
+}
+
+section.max-width-wrapper {
+  max-width: 800px;
+}
+
+.card {
+  padding: var(--space-3);
+  background: var(--color-white);
+  border-bottom: solid 8px var(--color-black-60);
+}
