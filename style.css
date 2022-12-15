@@ -45,7 +45,8 @@ body {
 }
 
 header {
-  margin: var(--space-7) 0 var(--space-6);
+  padding-top: var(--space-7);
+  margin: 0 0 var(--space-6);
 }
 
 main {
@@ -78,6 +79,7 @@ h1.title {
   font-size: var(--font-size-4);
   color: var(--color-black-100);
   line-height: 120%;
+  margin: 0;
   margin-bottom: var(--space-5);
 }
 
@@ -100,10 +102,6 @@ h2.indented-heading {
   line-height: 120%;
   margin: calc(-1 * var(--space-2)) 0 var(--space-2) calc(-1 * var(--space-4));
   width: fit-content;
-}
-
-section.max-width-wrapper {
-  max-width: 800px;
 }
 
 .card {
